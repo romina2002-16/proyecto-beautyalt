@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fcecec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 420px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #d9a67b;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c58f63;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Registro Profesional</h2>
+    <form method="POST" action="registro.php">
+      <input type="text" name="nombre" placeholder="Nombre Completo" required>
+      <input type="email" name="correo" placeholder="Correo Electrónico" required>
+      <input type="password" name="contrasena" placeholder="Contraseña" required>
+      <input type="password" name="confirm" placeholder="Confirmar Contraseña" required>
+      <select name="especialidad" required>
+        <option value="">Especialidad</option>
+        <option value="Maquillaje">Maquillaje</option>
+        <option value="Uñas">Uñas</option>
+        <option value="Pestañas">Pestañas</option>
+        <option value="Barber">Barber</option>
+      </select>
+      <button type="submit">Regístrate</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro Profesional | BeautyAlt</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fdeef0;
+      color: #333;
+    }
+    .container {
+      max-width: 480px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .container img {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 160px;
+    }
+    h2 {
+      text-align: center;
+      color: #e48c94;
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #444;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #e48c94;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d06271;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="assets/img/logo_beama.png" alt="Logo BeautyAlt">
+    <h2>Registro Profesional</h2>
+
+    <form action="registro.php" method="POST">
+      <label for="nombre">Nombre Completo</label>
+      <input type="text" name="nombre" id="nombre" required>
+
+      <label for="correo">Correo Electrónico</label>
+      <input type="email" name="correo" id="correo" required>
+
+      <label for="clave">Contraseña</label>
+      <input type="password" name="clave" id="clave" required>
+
+      <label for="telefono">Teléfono</label>
+      <input type="text" name="telefono" id="telefono">
+
+      <label for="especialidad">Especialidad</label>
+      <select name="especialidad" id="especialidad" required>
+        <option value="">Selecciona una</option>
+        <option value="Pestañas">Pestañas</option>
+        <option value="Uñas">Uñas</option>
+        <option value="Pedicure">Pedicure</option>
+        <option value="Extensiones de cabello">Extensiones de cabello</option>
+        <option value="Planchado">Planchado</option>
+        <option value="Maquillaje y peinado">Maquillaje y peinado</option>
+        <option value="Barbería">Barbería</option>
+        <option value="Spa">Spa</option>
+        <option value="Microblading">Microblading</option>
+        <option value="Cortes y tintes">Cortes y tintes</option>
+        <option value="Skin care">Skin care</option>
+      </select>
+
+      <button type="submit">Registrarme</button>
+    </form>
+  </div>
+
+</body>
+</html>

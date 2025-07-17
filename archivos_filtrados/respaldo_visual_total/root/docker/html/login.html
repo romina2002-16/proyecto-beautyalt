@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicia sesión | BeautyAlt</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdeef0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 360px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .logo {
+      width: 100px;
+      margin: 0 auto 1rem auto;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    p {
+      font-size: 0.95rem;
+      color: #888;
+      margin-bottom: 1.5rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #e8a3a3;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .forgot {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+    }
+    .forgot a {
+      color: #e19b9b;
+      text-decoration: none;
+    }
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 1.2rem;
+      font-size: 0.75rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="assets/img/logo_beama.png" alt="Logo BeautyAlt" class="logo">
+    <h2>Bienvenida de nuevo</h2>
+    <form action="verificar_login.php" method="POST">
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="password" name="clave" placeholder="Contraseña" required>
+      <button type="submit">Entrar a BeautyAlt</button>
+    </form>
+    <div class="forgot">
+      <a href="recuperar_contrasena.html">¿Olvidaste tu contraseña?</a>
+    </div>
+    <div class="footer">BeautyAlt / 2025</div>
+  </div>
+</body>
+</html>

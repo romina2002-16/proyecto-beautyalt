@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendar Cita | BeautyAlt</title>
+  <style>
+    body {
+      background: #fdeef0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+    .form-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+    .form-container img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: #d66c7b;
+      font-size: 1.5rem;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #555;
+    }
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.4rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    button {
+      background: #d66c7b;
+      color: white;
+      border: none;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+      width: 100%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #bf5b6a;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      .form-container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="assets/img/logo_beama.png" alt="Logo BeautyAlt" />
+    <h2>Agendar nueva cita</h2>
+    <form action="registrar_cita.php" method="POST">
+      <label>Nombre de la clienta</label>
+      <input type="text" name="nombre_cliente" required />
+
+      <label>Correo de la clienta</label>
+      <input type="email" name="correo_cliente" required />
+
+      <label>Teléfono</label>
+      <input type="tel" name="telefono_cliente" required />
+
+      <label>Dirección</label>
+      <input type="text" name="direccion_cliente" required />
+
+      <label>Referencias</label>
+      <textarea name="referencia" rows="3"></textarea>
+
+      <label>Fecha</label>
+      <input type="date" name="fecha" required />
+
+      <label>Hora</label>
+      <select name="hora" required>
+        <option value="">Selecciona una hora</option>
+        <option value="08:00:00">8:00 AM</option>
+        <option value="09:00:00">9:00 AM</option>
+        <option value="10:00:00">10:00 AM</option>
+        <option value="11:00:00">11:00 AM</option>
+        <option value="12:00:00">12:00 PM</option>
+        <option value="13:00:00">1:00 PM</option>
+        <option value="14:00:00">2:00 PM</option>
+        <option value="15:00:00">3:00 PM</option>
+        <option value="16:00:00">4:00 PM</option>
+        <option value="17:00:00">5:00 PM</option>
+        <option value="18:00:00">6:00 PM</option>
+        <option value="19:00:00">7:00 PM</option>
+        <option value="20:00:00">8:00 PM</option>
+      </select>
+
+      <label>Servicio solicitado</label>
+      <input type="text" name="servicio" required />
+
+      <label>Monto</label>
+      <input type="number" step="0.01" name="monto" required />
+
+      <label>Estado de pago</label>
+      <select name="estado_pago" required>
+        <option value="pendiente">Pendiente</option>
+        <option value="pagado">Pagado</option>
+      </select>
+
+      <button type="submit">Guardar cita</button>
+    </form>
+  </div>
+</body>
+</html>

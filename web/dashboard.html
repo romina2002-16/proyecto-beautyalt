@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | BeautyAlt</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fdeef0;
+      color: #333;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .header h1 {
+      font-size: 2rem;
+      color: #e48c94;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      color: #c96a76;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Bienvenida al panel de BeautyAlt, Valeria</h1>
+      <p>Este será tu centro de comando emocional, financiero y de conexión.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h2>Citas del día</h2>
+        <p>Hoy tienes 2 citas programadas. ¡Es tu momento de brillar!</p>
+      </div>
+      <div class="card">
+        <h2>Ingresos del mes</h2>
+        <p>$3,250 pesos mexicanos hasta ahora. ¡Sigue creciendo!</p>
+      </div>
+      <div class="card">
+        <h2>Nivel de reputación</h2>
+        <p>Estás en el nivel “Estrella Dorada”. 92% de satisfacción de clientas.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

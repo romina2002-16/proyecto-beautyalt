@@ -1,0 +1,4 @@
+Nombre: romina | Correo: valeriaolivos76@gmail.com | Clave: $2y$10$7djbT.A.KvyCBdSKWnGc0uh5SNNEsJ6TMZPB2hOucUSPwnbfqcPfy
+Nombre: Valeria | Correo: valeriaolivos76@gmail.com | Clave: $2y$10$zg5lWMzzSLGEh8qzFN.QOeo9KjXm..lhp7522ZcS.OSU7JTrW2lUO
+Nombre: Valeria | Correo: valeriaolivos76@gmail.com | Clave: $2y$10$KukcD7qX2TTG4132tkdjuOB17wEkwE1sZ7DUnBWiPaQG5Vlo3nWCS
+Nombre: Valeria | Correo: valeriaolivos76@gmail.com | Clave: $2y$10$0sPz90Q.nqsEdTjo9dMOVOVehVb2XPMidbXHRDZ3IAxvbZ/3Co1Ay
